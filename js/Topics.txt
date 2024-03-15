@@ -1,0 +1,39 @@
+javascript
+statically vs dynamic type
+typecasting  implicit and explicit
+primitive and non primitive
+generator function
+indentifiers
+async await
+promise
+pass by value , pass by reference
+highorder function
+callback function
+local Storage vs session storage
+nullish operator
+optionl chaining
+event deligation
+event bubbling
+event capturing
+first class function
+error in javascript
+this keyword
+hoisting
+clossure
+currying
+TDZ
+exception handling
+http structure
+escape Sequence
+literals
+shallow copy 
+deep copy
+lodash(library)
+object methods
+flatmap
+hasmap
+generator function
+factory function
+throw
+thread
+cdn vs download
