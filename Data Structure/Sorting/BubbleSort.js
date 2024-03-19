@@ -20,3 +20,5 @@ console.log(arr);
 
 // compare the adjesent array swap if they are not in order
 // repeat until get swapped
+
+// Time complaxity is o(n^2)
