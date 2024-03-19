@@ -10,8 +10,6 @@ class Queue{
         this.items.shift()
     }
 }
-
-
 const NewQueue = new Queue()
 
 NewQueue.enqueue(10)

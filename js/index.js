@@ -321,3 +321,29 @@
 //     console.log("Data has been written to", filePath);
 //   }
 // });
+
+// let arr =[11,111,1,1111]
+// let res=[]
+// let a= arr.toString().split(',')
+// for(let i=0;i<a.length;i++){
+//     res.push(a[i].length)
+// }
+
+// console.log(res);
+
+// let word = "shamil"
+// let reverse = word.split('').reverse().join('')
+// word==reverse?console.log(true):console.log(false);
+
+let myObject = {
+    name: 'John',
+    age: 30,
+    city: 'New York'
+  };
+  
+  for (let key in myObject) {
+    if (myObject.hasOwnProperty(key)) {
+      console.log(key + ': ' + myObject[key]);
+    }
+  }
+  
