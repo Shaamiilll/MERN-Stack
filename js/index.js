@@ -308,7 +308,6 @@
 
 //   process.nextTick(myCallback);
 
-
 // const fs = require("fs");
 // const data = "Hello, world!";
 // const filePath = "text.txt";
@@ -335,15 +334,108 @@
 // let reverse = word.split('').reverse().join('')
 // word==reverse?console.log(true):console.log(false);
 
-let myObject = {
-    name: 'John',
-    age: 30,
-    city: 'New York'
-  };
-  
-  for (let key in myObject) {
-    if (myObject.hasOwnProperty(key)) {
-      console.log(key + ': ' + myObject[key]);
+// let myObject = {
+//     name: 'John',
+//     age: 30,
+//     city: 'New York'
+// };
+
+// let obj={}
+
+// if (Object.keys(obj).length === 0) {
+//     console.log('Object is empty');
+// } else {
+//     console.log('Object is not empty');
+// }
+
+// let array = [1, 4, 7, 3, 4, 2, 4, 3];
+
+// function reoveDp(array) {
+//   const uniq = [];
+
+//   array.forEach((element) => {
+//     if (!uniq.includes(element)) {
+//       uniq.push(element);
+//     }
+//   });
+//   return uniq
+// }
+
+// console.log(reoveDp(array));
+
+// let array = [
+//   { name: "jhon", mark: 75 },
+//   { name: "joel", mark: 100 },
+// ];
+// let marks = [];
+
+// for (let i = 0; i < array.length; i++) {
+//   marks.push(array[i].mark);
+// }
+// marks.sort((a, b) => b - a);
+// console.log(marks[0]);
+
+// let strings = ["helloworld", "apple"];
+// let arr = strings.map(value => {
+//     return value.charAt(0).toUpperCase() + value.slice(1);
+// });
+// console.log(arr);
+
+// let arr =['heloworld' , "apple"]
+
+// let res= arr.reduce((acc , value)=>{
+//     return value.length > acc.length ? value : acc
+// },'')
+// console.log(res);
+
+// function* multiple(num) {
+//   while (true) {
+//     yield num
+//     num *=2 ;
+//   }
+// }
+
+// const generator = multiple(2);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+
+// let word = "hello wrld";
+
+// word.split("").reverse().join("");
+// console.log(word.split("").reverse().join(""));
+
+// fs.writeFileSync('example.txt', content, (err) => {
+//   if (err) {
+//     console.error('An error occurred while writing the file:', err);
+//     return;
+//   }
+//   console.log('File "example.txt" has been created with the content:', content);
+// });
+
+// fs.readFileSync('example.txt', 'utf8', (err, data) => {
+//   if (err) {
+//     console.error('An error occurred while reading the file:', err);
+//     return;
+//   }
+//   console.log('Content of the file "example.txt":', data);
+// });
+const fs = require("fs");
+
+try {
+    
+    for(let i = 1; i <= 10; i++) {
+        fs.appendFileSync('example.txt', i + '\n');
     }
-  }
-  
+    console.log('Numbers 1-10 have been successfully appended to "example.txt"');
+    
+} catch (error) {
+   console.log(error); 
+}
